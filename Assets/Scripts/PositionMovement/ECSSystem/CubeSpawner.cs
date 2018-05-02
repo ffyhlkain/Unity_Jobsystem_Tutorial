@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using Unity.Transforms2D;
 using UnityEngine;
 
-namespace Assets.Scripts.PositionMovement.ECSJobSystem
+namespace Assets.Scripts.PositionMovement.ECSSystem
 {
     public class CubeSpawner : MonoBehaviour
     {

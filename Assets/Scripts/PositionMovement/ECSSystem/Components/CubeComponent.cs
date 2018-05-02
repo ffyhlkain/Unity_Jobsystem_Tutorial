@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using Unity.Transforms2D;
 
-namespace Assets.Scripts.PositionMovement.ECSJobSystem.Components
+namespace Assets.Scripts.PositionMovement.ECSSystem.Components
 {
     public struct CubeComponent : IComponentData
     {

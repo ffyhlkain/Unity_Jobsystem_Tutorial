@@ -3,7 +3,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Assets.Scripts.PositionMovement.ECSJobSystem
+namespace Assets.Scripts.PositionMovement.ECSSystem
 {
     public class CubeMovementSystem : ComponentSystem
     {
