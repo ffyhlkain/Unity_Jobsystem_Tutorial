@@ -18,6 +18,8 @@ namespace Assets.Scripts.PositionMovement.ECSJobSystem
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public void InitializeGame()
         {
+            Debug.Log("Initialize ECSJobSystem cubespawner");
+
             var entityManager = World.Active.GetExistingManager<EntityManager>();
 
             for (int i = 0; i < cubeCount; i++)
@@ -27,7 +29,7 @@ namespace Assets.Scripts.PositionMovement.ECSJobSystem
 
                 var endPosition = new Position2D();
                 endPosition.Value = new float2(Random.Range(-1000, 1000), Random.Range(-1000, 1000));
-                entityManager.AddComponentData(cubeEntity, new CubeComponent() { EndPosition = endPosition });
+                entityManager.AddComponentData(cubeEntity, new ECSJobSystemCubeComponent() { EndPosition = endPosition });
             }
         }
     }

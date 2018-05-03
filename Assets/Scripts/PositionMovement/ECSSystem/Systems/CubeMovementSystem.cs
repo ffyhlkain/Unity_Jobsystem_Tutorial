@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.PositionMovement.ECSJobSystem.Components;
+﻿using Assets.Scripts.PositionMovement.ECSSystem.Components;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
@@ -18,6 +18,7 @@ namespace Assets.Scripts.PositionMovement.ECSSystem
 
         protected override void OnUpdate()
         {
+            Debug.Log("ECS cubemovementsystem update");
             var passedTime = Time.deltaTime;
 
             for (int i = 0; i < data.Length; i++)

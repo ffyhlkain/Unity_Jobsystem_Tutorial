@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.PositionMovement.ECSJobSystem.Components;
+﻿using Assets.Scripts.PositionMovement.ECSSystem.Components;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms2D;
@@ -18,6 +18,7 @@ namespace Assets.Scripts.PositionMovement.ECSSystem
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public void InitializeGame()
         {
+            Debug.Log("Initialize ECS cubespawner");
             var entityManager = World.Active.GetExistingManager<EntityManager>();
 
             for (int i = 0; i < cubeCount; i++)
